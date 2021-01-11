@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErsarSecuriteEmployers", "ErsarSecuriteEmployers\ErsarSecuriteEmployers.csproj", "{E7D013CD-1545-4DDE-BCCF-37F5D01826D5}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ErsarSecurityEmployers", "ErsarSecurityEmployers\ErsarSecurityEmployers.vdproj", "{810F65CA-623E-4220-B9DB-E3572B875FBF}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ErsarSecurityEmployersInstaller", "ErsarSecurityEmployersInstaller\ErsarSecurityEmployersInstaller.vdproj", "{D68D14A1-AF27-4167-BFB2-B90AA82B701D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,12 +29,12 @@ Global
 		{E7D013CD-1545-4DDE-BCCF-37F5D01826D5}.Release|x64.Build.0 = Release|x64
 		{E7D013CD-1545-4DDE-BCCF-37F5D01826D5}.Release|x86.ActiveCfg = Release|x86
 		{E7D013CD-1545-4DDE-BCCF-37F5D01826D5}.Release|x86.Build.0 = Release|x86
-		{810F65CA-623E-4220-B9DB-E3572B875FBF}.Debug|Any CPU.ActiveCfg = Debug
-		{810F65CA-623E-4220-B9DB-E3572B875FBF}.Debug|x64.ActiveCfg = Debug
-		{810F65CA-623E-4220-B9DB-E3572B875FBF}.Debug|x86.ActiveCfg = Debug
-		{810F65CA-623E-4220-B9DB-E3572B875FBF}.Release|Any CPU.ActiveCfg = Release
-		{810F65CA-623E-4220-B9DB-E3572B875FBF}.Release|x64.ActiveCfg = Release
-		{810F65CA-623E-4220-B9DB-E3572B875FBF}.Release|x86.ActiveCfg = Release
+		{D68D14A1-AF27-4167-BFB2-B90AA82B701D}.Debug|Any CPU.ActiveCfg = Debug
+		{D68D14A1-AF27-4167-BFB2-B90AA82B701D}.Debug|x64.ActiveCfg = Debug
+		{D68D14A1-AF27-4167-BFB2-B90AA82B701D}.Debug|x86.ActiveCfg = Debug
+		{D68D14A1-AF27-4167-BFB2-B90AA82B701D}.Release|Any CPU.ActiveCfg = Release
+		{D68D14A1-AF27-4167-BFB2-B90AA82B701D}.Release|x64.ActiveCfg = Release
+		{D68D14A1-AF27-4167-BFB2-B90AA82B701D}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

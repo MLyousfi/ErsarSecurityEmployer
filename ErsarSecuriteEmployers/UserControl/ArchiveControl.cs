@@ -28,7 +28,7 @@ namespace ErsarSecuriteEmployers
 
         public void RefreshData()
         {
-           
+            ChercheTXT.Text = "Chercher...";
             this.archive.DataSource = null;
             this.archive.Rows.Clear();
             var res = Program.access.ExecQuery(ConstantQuery.SelectAll);
@@ -145,6 +145,7 @@ namespace ErsarSecuriteEmployers
         }
         void SearchFor(string name)
         {
+            myButton1.Enabled = false;
             Program.access.ClearParam();
             Program.access.AddParam("@user", "%" + name + "%");
             var res = Program.access.ExecQuery("SELECT * FROM archive WHERE [N° de Matricul action]  LIKE @user OR Nom LIKE @user OR Prenom  LIKE @user OR [N° de CIN] LIKE @user OR [N° de CNSS] LIKE @user OR [Date d'entré] LIKE @user OR Site LIKE @user OR Ville LIKE @user OR [Date de sortie] LIKE @user OR RIB LIKE @user");
@@ -226,12 +227,19 @@ namespace ErsarSecuriteEmployers
 
         private void archive_SelectionChanged(object sender, EventArgs e)
         {
-            if (archive.CurrentRow == null)
+            if (archive.CurrentRow == null || archive.CurrentRow.Cells[0].Value == null || archive.CurrentRow.Cells[0].Value.ToString() == "")
+            {
+                myButton1.Enabled = false;
                 return;
-            if(archive.CurrentRow.Cells[7].Value != null )
+            }
+
+
+            myButton1.Enabled = true;
+            if (archive.CurrentRow.Cells[7].Value != null )
             {
                 if(archive.CurrentRow.Cells[7].Value.ToString() == "")
                 {
+
                     myButton2.Enabled = false;
                 }else
                 {
@@ -245,6 +253,11 @@ namespace ErsarSecuriteEmployers
 
         private void myButton1_Click(object sender, EventArgs e)
         {
+            if(archive.CurrentRow == null)
+            {
+                myButton1.Enabled = false;
+                return;
+            }
             MessageBoxButtons buttons = MessageBoxButtons.YesNo;
             DialogResult result;
 
@@ -256,7 +269,6 @@ namespace ErsarSecuriteEmployers
             {
                 try
                 {
-                    myButton1.Enabled = false;
                     this.Cursor = Cursors.WaitCursor;
                     Program.access.AddParam("@num", archive.CurrentRow.Cells[0].Value.ToString());
                     var res = Program.access.ExecQuery("DELETE FROM archive WHERE [N° de Matricul action]=@num ");
@@ -265,7 +277,7 @@ namespace ErsarSecuriteEmployers
                         Instances.ARCHIVEPAGE.RefreshData();
                         Properties.Settings.Default.rowsNum--;
                         Instances.SAISIRPAGE.MatriculTXT.Text =  Program.access.numFacture();
-                        myButton1.Enabled = false;
+
                         this.Cursor = Cursors.Default;
 
 
@@ -273,8 +285,6 @@ namespace ErsarSecuriteEmployers
                     }
                     else
                     {
-
-                        myButton1.Enabled = false;
                         this.Cursor = Cursors.Default;
                         MessageBox.Show("Erreur survenu : " + res.Exception, "HalfShield : Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -282,8 +292,6 @@ namespace ErsarSecuriteEmployers
                 }
                 catch (Exception ex)
                 {
-
-                    myButton1.Enabled = false;
                     this.Cursor = Cursors.Default;
                     MessageBox.Show("Erreur survenu : " + ex.Message, "HalfShield : Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
