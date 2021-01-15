@@ -35,6 +35,7 @@
             this.myButton1 = new ImageProcessing.MyButton();
             this.ModifierBtn = new ImageProcessing.MyButton();
             this.SortirBtn = new ImageProcessing.MyButton();
+            this.YearCombo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.archive)).BeginInit();
             this.SuspendLayout();
@@ -42,6 +43,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.YearCombo);
             this.panel1.Controls.Add(this.ChercheTXT);
             this.panel1.Controls.Add(this.myButton2);
             this.panel1.Controls.Add(this.myButton1);
@@ -65,7 +67,7 @@
             this.ChercheTXT.ForeColor = System.Drawing.Color.White;
             this.ChercheTXT.Location = new System.Drawing.Point(3, 3);
             this.ChercheTXT.Name = "ChercheTXT";
-            this.ChercheTXT.Size = new System.Drawing.Size(436, 33);
+            this.ChercheTXT.Size = new System.Drawing.Size(436, 41);
             this.ChercheTXT.TabIndex = 0;
             this.ChercheTXT.Text = "Chercher...";
             this.ChercheTXT.TextChanged += new System.EventHandler(this.ChercheTXT_TextChanged);
@@ -164,9 +166,28 @@
             this.SortirBtn.Text = "Faire. S";
             this.SortirBtn.Click += new System.EventHandler(this.SortirBtn_Click);
             // 
+            // YearCombo
+            // 
+            this.YearCombo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.YearCombo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.YearCombo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.YearCombo.BackColor = System.Drawing.Color.Black;
+            this.YearCombo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.YearCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.YearCombo.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YearCombo.ForeColor = System.Drawing.Color.Red;
+            this.YearCombo.FormattingEnabled = true;
+            this.YearCombo.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
+            this.YearCombo.Location = new System.Drawing.Point(476, 8);
+            this.YearCombo.Name = "YearCombo";
+            this.YearCombo.Size = new System.Drawing.Size(121, 35);
+            this.YearCombo.TabIndex = 6;
+            this.YearCombo.SelectedIndexChanged += new System.EventHandler(this.YearCombo_SelectedIndexChanged);
+            // 
             // ArchiveControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.archive);
             this.Controls.Add(this.panel1);
@@ -192,5 +213,6 @@
         private ImageProcessing.MyButton myButton1;
         private ImageProcessing.MyButton myButton2;
         public System.Windows.Forms.DataGridView archive;
+        private System.Windows.Forms.ComboBox YearCombo;
     }
 }

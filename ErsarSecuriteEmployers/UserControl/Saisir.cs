@@ -240,6 +240,7 @@ namespace ErsarSecuriteEmployers
                     }else
                     {
                         PhotoLocation = file;
+                        myButton2.Enabled = true;
                     }
                 }
                 else
@@ -252,7 +253,8 @@ namespace ErsarSecuriteEmployers
                     else
                     {
                         Files.Add(file);
-                        
+                        myButton2.Enabled = true;
+
                     }
 
                 }
@@ -333,7 +335,7 @@ namespace ErsarSecuriteEmployers
             ClearFolders();
             Files.Clear();
             PhotoLocation = "";
-            myButton2.Visible = true;
+            myButton2.Enabled = false;
         }
        
         private void SetIndex()
@@ -358,6 +360,7 @@ namespace ErsarSecuriteEmployers
             listView1.Items.Clear();
             Files.Clear();
             PhotoLocation = "";
+            CheckVider();
         }
         private void Saisir_SizeChanged(object sender, EventArgs e)
         {
@@ -369,7 +372,17 @@ namespace ErsarSecuriteEmployers
                 panel1.Visible = true;
             }
         }
-
+        void CheckVider()
+        {
+            if(PrenomTXT.Text != "" || NomTXT.Text != "" || CnssTXT.Text != "" || CinTXT.Text != "" || RIBTXT.Text != "" 
+                || TelTXT.Text != "" || VilleTXT.Text != "" || AdresseTXT.Text != "" || SteTXT.Text != "" ||ObsertionTXT.Text != "")
+            {
+                myButton2.Enabled = true;
+            }else
+            {
+                myButton2.Enabled = false;
+            }
+        }
         private void PrenomTXT_TextChanged(object sender, EventArgs e)
         {
             if(PrenomTXT.Text != "" && NomTXT.Text != "")
@@ -379,6 +392,7 @@ namespace ErsarSecuriteEmployers
             {
                 EnregistrerBtn.Enabled = false;
             }
+            CheckVider();
         }
 
         private void ADDbtn_Click(object sender, EventArgs e)
@@ -406,6 +420,8 @@ namespace ErsarSecuriteEmployers
                                 else
                                 {
                                     PhotoLocation = file;
+
+                                    myButton2.Enabled = true;
                                 }
                             }
                             else
@@ -418,6 +434,7 @@ namespace ErsarSecuriteEmployers
                                 else
                                 {
                                     Files.Add(file);
+                                    myButton2.Enabled = true;
 
                                 }
 

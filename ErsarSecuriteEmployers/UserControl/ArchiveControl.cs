@@ -21,35 +21,65 @@ namespace ErsarSecuriteEmployers
         public ArchiveControl()
         {
             InitializeComponent();
+            
         }
 
 
-        
+        void FileCombosYear()
+        {
+            var res = Program.access.ExecQuery("SELECT * FROM archive",getYear:true);
+            if(res.success)
+            {
+                YearCombo.DataSource = res.years;
+                YearCombo.SelectedIndex = YearCombo.Items.Count - 1;
+            }
+            else
+            {
+                MessageBox.Show(res.Exception);
+            }
+            
+        }
 
         public void RefreshData()
         {
             ChercheTXT.Text = "Chercher...";
             this.archive.DataSource = null;
             this.archive.Rows.Clear();
-            var res = Program.access.ExecQuery(ConstantQuery.SelectAll);
-            if (res.success)
+            if(YearCombo.SelectedItem.ToString() == "Tous")
             {
-                this.archive.DataSource = Program.access.DBDT;
-
-                Properties.Settings.Default.rowsNum = archive.Rows.Count + 1;
-                archive.Sort(archive.Columns[0], ListSortDirection.Descending);
-                if (Instances.DATAPAGE != null)
+                var res = Program.access.ExecQuery(ConstantQuery.SelectAll);
+                if (res.success)
                 {
-                    Instances.DATAPAGE.LoadComboItems();
+                    this.archive.DataSource = Program.access.DBDT;
+
+                    //Properties.Settings.Default.rowsNum = archive.Rows.Count + 1;
+                    archive.Sort(archive.Columns[0], ListSortDirection.Descending);
+                    if (Instances.DATAPAGE != null)
+                    {
+                        Instances.DATAPAGE.LoadComboItems();
+                    }
+                }
+            }else
+            {
+                string year = YearCombo.SelectedItem.ToString();
+                Program.access.ClearParam();
+                Program.access.AddParam("@user", "%" + "/" + year + "%");
+                var res = Program.access.ExecQuery("SELECT * FROM archive WHERE [Date d'entré]  LIKE @user");
+                if (res.success)
+                {
+                    this.archive.DataSource = Program.access.DBDT;
+
+                    archive.Sort(archive.Columns[0], ListSortDirection.Descending);
+                    
                 }
             }
-
+            
 
         }
 
         public void setColumnsWeight()
         {
-
+            if (archive.DataSource == null) return;
             this.archive.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
             this.archive.ColumnHeadersDefaultCellStyle.ForeColor = Color.Red;
             this.archive.EnableHeadersVisualStyles = false;
@@ -94,10 +124,11 @@ namespace ErsarSecuriteEmployers
         }
         private void ArchiveControl_Load(object sender, EventArgs e)
         {
+
+            FileCombosYear();
             RefreshData();
             setColumnsWeight();
 
-            
         }
 
         private void archive_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
@@ -119,6 +150,7 @@ namespace ErsarSecuriteEmployers
             if (ChercheTXT.Text == "")
             {
                 ChercheTXT.Text = "Chercher...";
+                RefreshData();
             }
         }
 
@@ -297,6 +329,11 @@ namespace ErsarSecuriteEmployers
 
                 }
             }
+        }
+
+        private void YearCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RefreshData();
         }
     }
 }

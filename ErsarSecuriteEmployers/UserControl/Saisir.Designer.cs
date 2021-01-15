@@ -269,6 +269,7 @@
             this.ObsertionTXT.Name = "ObsertionTXT";
             this.ObsertionTXT.Size = new System.Drawing.Size(851, 91);
             this.ObsertionTXT.TabIndex = 0;
+            this.ObsertionTXT.TextChanged += new System.EventHandler(this.PrenomTXT_TextChanged);
             // 
             // label9
             // 

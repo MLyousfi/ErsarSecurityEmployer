@@ -38,6 +38,7 @@ namespace ErsarSecuriteEmployers.Data
         public string DateDeSortie;
         public Stack<string> IDs = new Stack<string>();
         public List<string> ComboBoxDatSource = new List<string>();
+        public List<string> years = new List<string>();
         public FicheModel model = new FicheModel();
     }
     class DataAccess
@@ -115,7 +116,7 @@ namespace ErsarSecuriteEmployers.Data
             OleDbParameter NewParam = new OleDbParameter(Name, Value);
             Params.Add(NewParam);
         }
-        public QueryResult ExecQuery(string Query, bool IsReader = false, bool ComboBoxReader = false, bool getFicheModel = false, bool status = false)
+        public QueryResult ExecQuery(string Query, bool IsReader = false, bool ComboBoxReader = false, bool getFicheModel = false, bool status = false,bool getYear = false)
         {
 
             QueryResult result = new QueryResult() { success = false, RecordCount = 0, Exception = "" };
@@ -156,8 +157,30 @@ namespace ErsarSecuriteEmployers.Data
 
                    
                 }
+                if (getYear)
+                {
 
-                if(ComboBoxReader)
+                    if (DBDT.Rows.Count > 0)
+                    {
+
+                        result.years.Add("Tous");
+                        foreach (DataRow row in DBDT.Rows)
+                        {
+                            if(row["Date d'entré"] != null && row["Date d'entré"].ToString() != string.Empty)
+                            {
+                                if(!result.years.Contains(Convert.ToDateTime(row["Date d'entré"]).Year.ToString()))
+                                {
+                                    result.years.Add(Convert.ToDateTime(row["Date d'entré"]).Year.ToString());
+                                }
+                            }
+                        }
+
+                    }
+
+
+                }
+
+                if (ComboBoxReader)
                 {
                     if (DBDT.Rows.Count > 0)
                     {
