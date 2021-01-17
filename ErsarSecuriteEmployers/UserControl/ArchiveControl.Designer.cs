@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.YearCombo = new System.Windows.Forms.ComboBox();
             this.ChercheTXT = new System.Windows.Forms.TextBox();
-            this.archive = new System.Windows.Forms.DataGridView();
             this.myButton2 = new ImageProcessing.MyButton();
             this.myButton1 = new ImageProcessing.MyButton();
             this.ModifierBtn = new ImageProcessing.MyButton();
             this.SortirBtn = new ImageProcessing.MyButton();
-            this.YearCombo = new System.Windows.Forms.ComboBox();
+            this.archive = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.archive)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +56,25 @@
             this.panel1.Size = new System.Drawing.Size(1260, 50);
             this.panel1.TabIndex = 0;
             // 
+            // YearCombo
+            // 
+            this.YearCombo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.YearCombo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.YearCombo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.YearCombo.BackColor = System.Drawing.Color.Black;
+            this.YearCombo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.YearCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.YearCombo.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YearCombo.ForeColor = System.Drawing.Color.Red;
+            this.YearCombo.FormattingEnabled = true;
+            this.YearCombo.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
+            this.YearCombo.Location = new System.Drawing.Point(476, 8);
+            this.YearCombo.Name = "YearCombo";
+            this.YearCombo.Size = new System.Drawing.Size(121, 35);
+            this.YearCombo.TabIndex = 6;
+            this.YearCombo.SelectedIndexChanged += new System.EventHandler(this.YearCombo_SelectedIndexChanged);
+            // 
             // ChercheTXT
             // 
             this.ChercheTXT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -73,22 +92,6 @@
             this.ChercheTXT.TextChanged += new System.EventHandler(this.ChercheTXT_TextChanged);
             this.ChercheTXT.Enter += new System.EventHandler(this.ChercheTXT_Enter);
             this.ChercheTXT.Leave += new System.EventHandler(this.ChercheTXT_Leave);
-            // 
-            // archive
-            // 
-            this.archive.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.archive.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.archive.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.archive.Location = new System.Drawing.Point(0, 0);
-            this.archive.MultiSelect = false;
-            this.archive.Name = "archive";
-            this.archive.RowHeadersWidth = 51;
-            this.archive.RowTemplate.Height = 24;
-            this.archive.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.archive.Size = new System.Drawing.Size(1260, 536);
-            this.archive.TabIndex = 1;
-            this.archive.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.archive_CellFormatting);
-            this.archive.SelectionChanged += new System.EventHandler(this.archive_SelectionChanged);
             // 
             // myButton2
             // 
@@ -166,24 +169,26 @@
             this.SortirBtn.Text = "Faire. S";
             this.SortirBtn.Click += new System.EventHandler(this.SortirBtn_Click);
             // 
-            // YearCombo
+            // archive
             // 
-            this.YearCombo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.YearCombo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-            this.YearCombo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.YearCombo.BackColor = System.Drawing.Color.Black;
-            this.YearCombo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.YearCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.YearCombo.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.YearCombo.ForeColor = System.Drawing.Color.Red;
-            this.YearCombo.FormattingEnabled = true;
-            this.YearCombo.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-            this.YearCombo.Location = new System.Drawing.Point(476, 8);
-            this.YearCombo.Name = "YearCombo";
-            this.YearCombo.Size = new System.Drawing.Size(121, 35);
-            this.YearCombo.TabIndex = 6;
-            this.YearCombo.SelectedIndexChanged += new System.EventHandler(this.YearCombo_SelectedIndexChanged);
+            this.archive.AccessibleRole = System.Windows.Forms.AccessibleRole.Alert;
+            this.archive.AllowUserToAddRows = false;
+            this.archive.AllowUserToDeleteRows = false;
+            this.archive.AllowUserToResizeRows = false;
+            this.archive.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.archive.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.archive.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.archive.Location = new System.Drawing.Point(0, 0);
+            this.archive.MultiSelect = false;
+            this.archive.Name = "archive";
+            this.archive.ReadOnly = true;
+            this.archive.RowHeadersWidth = 51;
+            this.archive.RowTemplate.Height = 24;
+            this.archive.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.archive.Size = new System.Drawing.Size(1260, 536);
+            this.archive.TabIndex = 1;
+            this.archive.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.archive_CellFormatting);
+            this.archive.SelectionChanged += new System.EventHandler(this.archive_SelectionChanged);
             // 
             // ArchiveControl
             // 

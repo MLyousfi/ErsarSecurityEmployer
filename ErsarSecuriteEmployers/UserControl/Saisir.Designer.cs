@@ -76,11 +76,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ADDbtn = new ImageProcessing.MyButton();
             this.EnregistrerBtn = new ImageProcessing.MyButton();
             this.myButton2 = new ImageProcessing.MyButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -123,7 +123,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 27);
-            this.label2.TabIndex = 2;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Nom :";
             // 
             // PrenomTXT
@@ -145,7 +145,7 @@
             this.Prenomlbl.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.Prenomlbl.Name = "Prenomlbl";
             this.Prenomlbl.Size = new System.Drawing.Size(112, 27);
-            this.Prenomlbl.TabIndex = 4;
+            this.Prenomlbl.TabIndex = 0;
             this.Prenomlbl.Text = "Prenom :";
             // 
             // CnssTXT
@@ -167,7 +167,7 @@
             this.label3.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 27);
-            this.label3.TabIndex = 8;
+            this.label3.TabIndex = 0;
             this.label3.Text = "CNSS :";
             // 
             // CinTXT
@@ -189,7 +189,7 @@
             this.label4.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 27);
-            this.label4.TabIndex = 6;
+            this.label4.TabIndex = 0;
             this.label4.Text = "CIN :";
             // 
             // label5
@@ -200,7 +200,7 @@
             this.label5.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 27);
-            this.label5.TabIndex = 16;
+            this.label5.TabIndex = 0;
             this.label5.Text = "Site :";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -212,7 +212,7 @@
             this.label6.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(162, 27);
-            this.label6.TabIndex = 14;
+            this.label6.TabIndex = 0;
             this.label6.Text = "Date d\'entré :";
             // 
             // RIBTXT
@@ -234,7 +234,7 @@
             this.label7.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 27);
-            this.label7.TabIndex = 12;
+            this.label7.TabIndex = 0;
             this.label7.Text = "RIB :";
             // 
             // TelTXT
@@ -256,7 +256,7 @@
             this.label8.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(88, 27);
-            this.label8.TabIndex = 10;
+            this.label8.TabIndex = 0;
             this.label8.Text = "N° Tél :";
             // 
             // ObsertionTXT
@@ -280,7 +280,7 @@
             this.label9.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(107, 24);
-            this.label9.TabIndex = 18;
+            this.label9.TabIndex = 0;
             this.label9.Text = "Obsertion :";
             // 
             // tableLayoutPanel1
@@ -298,7 +298,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(504, 47);
-            this.tableLayoutPanel1.TabIndex = 21;
+            this.tableLayoutPanel1.TabIndex = 1;
             this.tableLayoutPanel1.TabStop = true;
             // 
             // tableLayoutPanel2
@@ -315,7 +315,7 @@
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(504, 47);
-            this.tableLayoutPanel2.TabIndex = 22;
+            this.tableLayoutPanel2.TabIndex = 3;
             this.tableLayoutPanel2.TabStop = true;
             // 
             // tableLayoutPanel3
@@ -332,7 +332,7 @@
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(504, 47);
-            this.tableLayoutPanel3.TabIndex = 23;
+            this.tableLayoutPanel3.TabIndex = 5;
             this.tableLayoutPanel3.TabStop = true;
             // 
             // tableLayoutPanel4
@@ -349,7 +349,7 @@
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(504, 47);
-            this.tableLayoutPanel4.TabIndex = 24;
+            this.tableLayoutPanel4.TabIndex = 0;
             this.tableLayoutPanel4.TabStop = true;
             // 
             // tableLayoutPanel5
@@ -366,7 +366,7 @@
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(504, 47);
-            this.tableLayoutPanel5.TabIndex = 25;
+            this.tableLayoutPanel5.TabIndex = 2;
             this.tableLayoutPanel5.TabStop = true;
             // 
             // tableLayoutPanel6
@@ -383,7 +383,7 @@
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(504, 47);
-            this.tableLayoutPanel6.TabIndex = 26;
+            this.tableLayoutPanel6.TabIndex = 4;
             this.tableLayoutPanel6.TabStop = true;
             // 
             // tableLayoutPanel7
@@ -399,7 +399,7 @@
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(498, 45);
-            this.tableLayoutPanel7.TabIndex = 27;
+            this.tableLayoutPanel7.TabIndex = 6;
             this.tableLayoutPanel7.TabStop = true;
             // 
             // dateTXT
@@ -411,7 +411,7 @@
             this.dateTXT.Location = new System.Drawing.Point(252, 3);
             this.dateTXT.Name = "dateTXT";
             this.dateTXT.Size = new System.Drawing.Size(215, 32);
-            this.dateTXT.TabIndex = 7;
+            this.dateTXT.TabIndex = 0;
             this.dateTXT.Value = new System.DateTime(2020, 12, 24, 15, 37, 0, 0);
             // 
             // tableLayoutPanel8
@@ -445,7 +445,7 @@
             this.tableLayoutPanel16.RowCount = 1;
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel16.Size = new System.Drawing.Size(504, 96);
-            this.tableLayoutPanel16.TabIndex = 30;
+            this.tableLayoutPanel16.TabIndex = 1;
             this.tableLayoutPanel16.TabStop = true;
             // 
             // AdresseTXT
@@ -468,7 +468,7 @@
             this.label12.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(112, 27);
-            this.label12.TabIndex = 16;
+            this.label12.TabIndex = 0;
             this.label12.Text = "Adresse :";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -486,7 +486,7 @@
             this.tableLayoutPanel15.RowCount = 1;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel15.Size = new System.Drawing.Size(504, 96);
-            this.tableLayoutPanel15.TabIndex = 29;
+            this.tableLayoutPanel15.TabIndex = 0;
             this.tableLayoutPanel15.TabStop = true;
             // 
             // SteTXT
@@ -516,7 +516,7 @@
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel9.Size = new System.Drawing.Size(1008, 97);
-            this.tableLayoutPanel9.TabIndex = 29;
+            this.tableLayoutPanel9.TabIndex = 0;
             this.tableLayoutPanel9.TabStop = true;
             // 
             // firstthree
@@ -563,7 +563,7 @@
             this.tableLayoutPanel14.RowCount = 1;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel14.Size = new System.Drawing.Size(504, 51);
-            this.tableLayoutPanel14.TabIndex = 28;
+            this.tableLayoutPanel14.TabIndex = 7;
             this.tableLayoutPanel14.TabStop = true;
             // 
             // label11
@@ -574,7 +574,7 @@
             this.label11.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(73, 27);
-            this.label11.TabIndex = 12;
+            this.label11.TabIndex = 0;
             this.label11.Text = "Ville :";
             // 
             // VilleTXT
@@ -757,6 +757,32 @@
             this.imageList1.ImageSize = new System.Drawing.Size(32, 32);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1070, 117);
+            this.panel1.TabIndex = 33;
+            this.panel1.TabStop = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::ErsarSecuriteEmployers.Properties.Resources.Ersar3d;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1070, 117);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // ADDbtn
             // 
             this.ADDbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -813,32 +839,6 @@
             this.myButton2.TabIndex = 3;
             this.myButton2.Text = "Vider";
             this.myButton2.Click += new System.EventHandler(this.DeleteBtn_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1070, 117);
-            this.panel1.TabIndex = 33;
-            this.panel1.TabStop = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::ErsarSecuriteEmployers.Properties.Resources.Ersar3d;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1070, 117);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // Saisir
             // 

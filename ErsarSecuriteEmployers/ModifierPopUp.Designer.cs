@@ -199,17 +199,17 @@
             this.MatriculTXT.Location = new System.Drawing.Point(415, 6);
             this.MatriculTXT.Margin = new System.Windows.Forms.Padding(0, 6, 0, 0);
             this.MatriculTXT.Name = "MatriculTXT";
-            this.MatriculTXT.Size = new System.Drawing.Size(175, 27);
+            this.MatriculTXT.Size = new System.Drawing.Size(175, 32);
             this.MatriculTXT.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(88, 6);
+            this.label1.Location = new System.Drawing.Point(6, 6);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(324, 22);
+            this.label1.Size = new System.Drawing.Size(406, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "Modifier employé(e) N° de Matricule :";
             // 
@@ -270,17 +270,17 @@
             this.NomTXT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NomTXT.Location = new System.Drawing.Point(143, 3);
             this.NomTXT.Name = "NomTXT";
-            this.NomTXT.Size = new System.Drawing.Size(323, 27);
+            this.NomTXT.Size = new System.Drawing.Size(323, 32);
             this.NomTXT.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(78, 6);
+            this.label3.Location = new System.Drawing.Point(64, 6);
             this.label3.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 22);
+            this.label3.Size = new System.Drawing.Size(73, 27);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nom :";
             // 
@@ -307,17 +307,17 @@
             this.PrenomTXT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PrenomTXT.Location = new System.Drawing.Point(143, 3);
             this.PrenomTXT.Name = "PrenomTXT";
-            this.PrenomTXT.Size = new System.Drawing.Size(323, 27);
+            this.PrenomTXT.Size = new System.Drawing.Size(323, 32);
             this.PrenomTXT.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(51, 6);
+            this.label4.Location = new System.Drawing.Point(29, 6);
             this.label4.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 22);
+            this.label4.Size = new System.Drawing.Size(108, 27);
             this.label4.TabIndex = 2;
             this.label4.Text = "Prenom :";
             // 
@@ -344,17 +344,17 @@
             this.CinTXT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CinTXT.Location = new System.Drawing.Point(143, 3);
             this.CinTXT.Name = "CinTXT";
-            this.CinTXT.Size = new System.Drawing.Size(323, 27);
+            this.CinTXT.Size = new System.Drawing.Size(323, 32);
             this.CinTXT.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(88, 6);
+            this.label5.Location = new System.Drawing.Point(76, 6);
             this.label5.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 22);
+            this.label5.Size = new System.Drawing.Size(61, 27);
             this.label5.TabIndex = 2;
             this.label5.Text = "CIN :";
             // 
@@ -381,17 +381,17 @@
             this.CnssTXT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CnssTXT.Location = new System.Drawing.Point(143, 3);
             this.CnssTXT.Name = "CnssTXT";
-            this.CnssTXT.Size = new System.Drawing.Size(323, 27);
+            this.CnssTXT.Size = new System.Drawing.Size(323, 32);
             this.CnssTXT.TabIndex = 5;
             // 
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(73, 6);
+            this.label6.Location = new System.Drawing.Point(57, 6);
             this.label6.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 22);
+            this.label6.Size = new System.Drawing.Size(80, 27);
             this.label6.TabIndex = 2;
             this.label6.Text = "CNSS :";
             // 
@@ -418,17 +418,17 @@
             this.TelTXT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TelTXT.Location = new System.Drawing.Point(143, 3);
             this.TelTXT.Name = "TelTXT";
-            this.TelTXT.Size = new System.Drawing.Size(323, 27);
+            this.TelTXT.Size = new System.Drawing.Size(323, 32);
             this.TelTXT.TabIndex = 6;
             // 
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(69, 6);
+            this.label7.Location = new System.Drawing.Point(54, 6);
             this.label7.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 22);
+            this.label7.Size = new System.Drawing.Size(83, 27);
             this.label7.TabIndex = 2;
             this.label7.Text = "N° Tél :";
             // 
@@ -455,17 +455,17 @@
             this.RIBTXT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.RIBTXT.Location = new System.Drawing.Point(143, 3);
             this.RIBTXT.Name = "RIBTXT";
-            this.RIBTXT.Size = new System.Drawing.Size(323, 27);
+            this.RIBTXT.Size = new System.Drawing.Size(323, 32);
             this.RIBTXT.TabIndex = 7;
             // 
             // label8
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(89, 6);
+            this.label8.Location = new System.Drawing.Point(77, 6);
             this.label8.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 22);
+            this.label8.Size = new System.Drawing.Size(60, 27);
             this.label8.TabIndex = 2;
             this.label8.Text = "RIB :";
             // 
@@ -493,7 +493,7 @@
             this.dateTXT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTXT.Location = new System.Drawing.Point(299, 3);
             this.dateTXT.Name = "dateTXT";
-            this.dateTXT.Size = new System.Drawing.Size(167, 27);
+            this.dateTXT.Size = new System.Drawing.Size(167, 32);
             this.dateTXT.TabIndex = 8;
             this.dateTXT.Value = new System.DateTime(2020, 12, 24, 15, 37, 0, 0);
             // 
@@ -501,10 +501,10 @@
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(169, 6);
+            this.label9.Location = new System.Drawing.Point(136, 6);
             this.label9.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 22);
+            this.label9.Size = new System.Drawing.Size(157, 27);
             this.label9.TabIndex = 2;
             this.label9.Text = "Date d\'entré :";
             // 
@@ -531,17 +531,17 @@
             this.VilleTXT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VilleTXT.Location = new System.Drawing.Point(143, 3);
             this.VilleTXT.Name = "VilleTXT";
-            this.VilleTXT.Size = new System.Drawing.Size(323, 27);
+            this.VilleTXT.Size = new System.Drawing.Size(323, 32);
             this.VilleTXT.TabIndex = 7;
             // 
             // label10
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(81, 6);
+            this.label10.Location = new System.Drawing.Point(68, 6);
             this.label10.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 22);
+            this.label10.Size = new System.Drawing.Size(69, 27);
             this.label10.TabIndex = 2;
             this.label10.Text = "Ville :";
             // 
@@ -576,10 +576,10 @@
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(86, 6);
+            this.label11.Location = new System.Drawing.Point(73, 6);
             this.label11.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 22);
+            this.label11.Size = new System.Drawing.Size(64, 27);
             this.label11.TabIndex = 2;
             this.label11.Text = "Site :";
             // 
@@ -614,10 +614,10 @@
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(50, 6);
+            this.label12.Location = new System.Drawing.Point(28, 6);
             this.label12.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(87, 22);
+            this.label12.Size = new System.Drawing.Size(109, 27);
             this.label12.TabIndex = 2;
             this.label12.Text = "Adresse :";
             // 
@@ -652,10 +652,10 @@
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(33, 6);
+            this.label13.Location = new System.Drawing.Point(7, 6);
             this.label13.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(103, 22);
+            this.label13.Size = new System.Drawing.Size(129, 27);
             this.label13.TabIndex = 2;
             this.label13.Text = "Obsertion :";
             // 
@@ -722,7 +722,7 @@
             // 
             // ModifierPopUp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;

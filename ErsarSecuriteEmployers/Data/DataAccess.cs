@@ -27,7 +27,7 @@ namespace ErsarSecuriteEmployers.Data
     }
     static class ConstantQuery
     {
-        public static string TableName = "Archive";
+        public static string TableName = "archive";
         public static string SelectAll = "SELECT * FROM " + TableName;
     }
     public class QueryResult

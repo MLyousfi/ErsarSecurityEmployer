@@ -70,10 +70,14 @@ namespace ErsarSecuriteEmployers
                     this.archive.DataSource = Program.access.DBDT;
 
                     archive.Sort(archive.Columns[0], ListSortDirection.Descending);
-                    
+                    if (Instances.DATAPAGE != null)
+                    {
+                        Instances.DATAPAGE.LoadComboItems();
+                    }
                 }
             }
-            
+            setColumnsWeight();
+
 
         }
 
@@ -84,18 +88,18 @@ namespace ErsarSecuriteEmployers
             this.archive.ColumnHeadersDefaultCellStyle.ForeColor = Color.Red;
             this.archive.EnableHeadersVisualStyles = false;
             archive.Columns[0].FillWeight = 30;
-            archive.Columns[1].FillWeight = 100;
-            archive.Columns[2].FillWeight = 100;
-            archive.Columns[3].FillWeight = 60;
-            archive.Columns[4].FillWeight = 100;
-            archive.Columns[5].FillWeight = 60;
-            archive.Columns[6].FillWeight = 60;
-            archive.Columns[7].FillWeight = 60;
-            archive.Columns[8].FillWeight = 60;
-            archive.Columns[9].FillWeight = 130;
+            archive.Columns[1].FillWeight = 80;
+            archive.Columns[2].FillWeight = 80;
+            archive.Columns[3].FillWeight = 50;
+            archive.Columns[4].FillWeight = 90;
+            archive.Columns[5].FillWeight = 100;
+            archive.Columns[6].FillWeight = 50;
+            archive.Columns[7].FillWeight = 50;
+            archive.Columns[8].FillWeight = 50;
+            archive.Columns[9].FillWeight = 100;
             archive.Columns[10].FillWeight = 60;
-            archive.Columns[11].FillWeight = 60;
-            archive.Columns[12].FillWeight = 60;
+            archive.Columns[11].FillWeight = 100;
+            archive.Columns[12].FillWeight = 80;
         }
         public void ChangeColor()
         {
@@ -127,7 +131,7 @@ namespace ErsarSecuriteEmployers
 
             FileCombosYear();
             RefreshData();
-            setColumnsWeight();
+           
 
         }
 
@@ -199,8 +203,30 @@ namespace ErsarSecuriteEmployers
                 SearchFor(this.ChercheTXT.Text);
         }
 
+        void changeNum()
+        {
+            foreach (DataGridViewRow row in archive.Rows)
+            {
+                if(row.Cells[0].Value.ToString() != null)
+                {
+                    if(row.Cells[8].Value.ToString() != null)
+                    {
+                        if(row.Cells[8].Value.ToString() != string.Empty)
+                        {
+                            Program.access.AddParam("@num", row.Cells[0].Value.ToString());
+                            Program.access.AddParam("@tel","0"+row.Cells[8].Value.ToString());
+                            Program.access.ExecQuery("UPDATE archive SET [N° de Matricul action] = @num ,[N° Tél] = @tel WHERE [N° de Matricul action] = @num");
+                        }
+                    }
+                }
+            }
+
+            RefreshData();
+        }
+
         private void SortirBtn_Click(object sender, EventArgs e)
         {
+            
             FaireSortir fs = new FaireSortir(archive.CurrentRow.Cells[0].Value.ToString());
             fs.Show();
         }

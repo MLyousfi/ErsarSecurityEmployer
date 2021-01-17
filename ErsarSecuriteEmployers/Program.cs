@@ -12,12 +12,13 @@ namespace ErsarSecuriteEmployers
 {
     static class Program 
     {
+        public static string databaseName = "SecurityEmployerData.accdb";
         public static DataAccess access;
        public static string localAppFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
        public static string localAppFolderPath = Path.Combine(localAppFolder, "HalfShieldStudio");
        public static string EmployerFolderPath = Path.Combine(localAppFolderPath, "EmployerData");
-       public static string sourceFilePath = Path.Combine(System.Windows.Forms.Application.StartupPath, "ERSARDATA.accdb");
-       public static string destFilePath = Path.Combine(localAppFolderPath, "ERSARDATA.accdb");
+       public static string sourceFilePath = Path.Combine(System.Windows.Forms.Application.StartupPath, databaseName);
+       public static string destFilePath = Path.Combine(localAppFolderPath, databaseName);
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

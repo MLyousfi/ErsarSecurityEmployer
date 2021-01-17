@@ -385,7 +385,7 @@ namespace ErsarSecuriteEmployers
         }
         private void PrenomTXT_TextChanged(object sender, EventArgs e)
         {
-            if(PrenomTXT.Text != "" && NomTXT.Text != "")
+            if(PrenomTXT.Text != "" && NomTXT.Text != "" && CinTXT.Text != "" && AdresseTXT.Text != "")
             {
                 EnregistrerBtn.Enabled = true;
             }else

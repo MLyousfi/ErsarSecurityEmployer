@@ -117,6 +117,8 @@ namespace ErsarSecuriteEmployers
             this.WindowState = FormWindowState.Minimized;
         }
 
+        
+
         QueryResult UpdateData(string facNum, string nom, string prenom, string cin, string cnss, string rib, DateTime dateE, string tel, string ste, string ville, string adresse, string obs)
         {
 

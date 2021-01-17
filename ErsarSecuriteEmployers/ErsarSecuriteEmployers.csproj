@@ -191,6 +191,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="SecurityEmployerData.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="ErsarSecuriteEmployers_TemporaryKey.pfx" />
     <None Include="Resources\print-solid.png" />
     <None Include="Resources\Ersar3d.png" />
@@ -241,9 +244,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ERSARDATA.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\title.png" />
     <None Include="Resources\securiteLogo.png" />
     <None Include="Resources\PointierDrag.png" />

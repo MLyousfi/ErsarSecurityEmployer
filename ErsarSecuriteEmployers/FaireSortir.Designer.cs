@@ -173,7 +173,7 @@
             this.MatriculTXT.Location = new System.Drawing.Point(241, 6);
             this.MatriculTXT.Margin = new System.Windows.Forms.Padding(0, 6, 0, 0);
             this.MatriculTXT.Name = "MatriculTXT";
-            this.MatriculTXT.Size = new System.Drawing.Size(73, 27);
+            this.MatriculTXT.Size = new System.Drawing.Size(73, 32);
             this.MatriculTXT.TabIndex = 1;
             this.MatriculTXT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -186,7 +186,7 @@
             this.dateTXT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTXT.Location = new System.Drawing.Point(403, 3);
             this.dateTXT.Name = "dateTXT";
-            this.dateTXT.Size = new System.Drawing.Size(228, 27);
+            this.dateTXT.Size = new System.Drawing.Size(228, 32);
             this.dateTXT.TabIndex = 8;
             this.dateTXT.Value = new System.DateTime(2020, 12, 24, 15, 37, 0, 0);
             // 
@@ -226,7 +226,7 @@
             // 
             // FaireSortir
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(648, 177);

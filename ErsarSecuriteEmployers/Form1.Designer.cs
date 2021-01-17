@@ -36,6 +36,7 @@
             this.btnMaximize = new ImageProcessing.MyButton();
             this.bntMinimize = new ImageProcessing.MyButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.versionLbl = new System.Windows.Forms.Label();
             this.dataBtn = new ImageProcessing.MyButton();
             this.listeBtn = new ImageProcessing.MyButton();
             this.NouvButton = new ImageProcessing.MyButton();
@@ -144,6 +145,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.versionLbl);
             this.panel2.Controls.Add(this.dataBtn);
             this.panel2.Controls.Add(this.listeBtn);
             this.panel2.Controls.Add(this.NouvButton);
@@ -152,6 +154,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1261, 49);
             this.panel2.TabIndex = 1;
+            // 
+            // versionLbl
+            // 
+            this.versionLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.versionLbl.AutoSize = true;
+            this.versionLbl.ForeColor = System.Drawing.Color.White;
+            this.versionLbl.Location = new System.Drawing.Point(3, 29);
+            this.versionLbl.Name = "versionLbl";
+            this.versionLbl.Size = new System.Drawing.Size(51, 20);
+            this.versionLbl.TabIndex = 8;
+            this.versionLbl.Text = "v1.0.5";
             // 
             // dataBtn
             // 
@@ -251,6 +264,7 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -270,6 +284,7 @@
         private DataControl dataControl1;
         private Saisir saisir1;
         private ArchiveControl archiveControl1;
+        private System.Windows.Forms.Label versionLbl;
     }
 }
 

@@ -45,11 +45,14 @@ namespace ErsarSecuriteEmployers
             Instances.ARCHIVEPAGE = this.archiveControl1;
             Instances.SAISIRPAGE = this.saisir1;
             Instances.DATAPAGE = this.dataControl1;
+
         }
         void InitializeScreen()
         {
             this.Text = string.Empty;
             this.ControlBox = false;
+            Version version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
+            this.versionLbl.Text ="v" + version.Major + "." + version.Minor + "." + version.Build;
             FirstClick();
         }
 
