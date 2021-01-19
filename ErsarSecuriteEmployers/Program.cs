@@ -16,7 +16,9 @@ namespace ErsarSecuriteEmployers
         public static DataAccess access;
        public static string localAppFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
        public static string localAppFolderPath = Path.Combine(localAppFolder, "HalfShieldStudio");
-       public static string EmployerFolderPath = Path.Combine(localAppFolderPath, "EmployerData");
+       public static string localAppFolderPathJunior = Path.Combine(localAppFolderPath, "EmployerData");
+
+       public static string EmployerFolderPath = Path.Combine(localAppFolderPathJunior, "Security");
        public static string sourceFilePath = Path.Combine(System.Windows.Forms.Application.StartupPath, databaseName);
        public static string destFilePath = Path.Combine(localAppFolderPath, databaseName);
         /// <summary>

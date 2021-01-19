@@ -181,5 +181,51 @@ namespace ErsarSecuriteEmployers
                 this.Cursor = Cursors.Default;
             }
         }
+
+
+        private void ClearChamp()
+        {
+            NomTXT.Text = "";
+            PrenomTXT.Text = "";
+            CinTXT.Text = "";
+            CnssTXT.Text = "";
+            RIBTXT.Text = "";
+            TelTXT.Text = "";
+            RIBTXT.Text = "";
+            VilleTXT.Text = "";
+            AdresseTXT.Text = "";
+            dateTXT.Value = DateTime.Today;
+            SteTXT.Text = "";
+            ObsertionTXT.Text = "";
+            myButton2.Enabled = false;
+        }
+        private void myButton2_Click(object sender, EventArgs e)
+        {
+            ClearChamp();
+        }
+        void CheckVider()
+        {
+            if (PrenomTXT.Text != "" || NomTXT.Text != "" || CnssTXT.Text != "" || CinTXT.Text != "" || RIBTXT.Text != ""
+                || TelTXT.Text != "" || VilleTXT.Text != "" || AdresseTXT.Text != "" || SteTXT.Text != "" || ObsertionTXT.Text != "")
+            {
+                myButton2.Enabled = true;
+            }
+            else
+            {
+                myButton2.Enabled = false;
+            }
+        }
+        private void NomTXT_TextChanged(object sender, EventArgs e)
+        {
+            if (PrenomTXT.Text != "" && NomTXT.Text != "" && CinTXT.Text != "")
+            {
+                EnregistrerBtn.Enabled = true;
+            }
+            else
+            {
+                EnregistrerBtn.Enabled = false;
+            }
+            CheckVider();
+        }
     }
 }

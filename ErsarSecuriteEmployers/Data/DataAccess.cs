@@ -163,7 +163,6 @@ namespace ErsarSecuriteEmployers.Data
                     if (DBDT.Rows.Count > 0)
                     {
 
-                        result.years.Add("Tous");
                         foreach (DataRow row in DBDT.Rows)
                         {
                             if(row["Date d'entré"] != null && row["Date d'entré"].ToString() != string.Empty)
@@ -174,7 +173,8 @@ namespace ErsarSecuriteEmployers.Data
                                 }
                             }
                         }
-
+                        result.years.Sort();
+                        result.years.Insert(0, "Tous");
                     }
 
 

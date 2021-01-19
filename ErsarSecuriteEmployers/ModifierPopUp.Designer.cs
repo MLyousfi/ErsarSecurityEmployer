@@ -272,6 +272,7 @@
             this.NomTXT.Name = "NomTXT";
             this.NomTXT.Size = new System.Drawing.Size(323, 32);
             this.NomTXT.TabIndex = 3;
+            this.NomTXT.TextChanged += new System.EventHandler(this.NomTXT_TextChanged);
             // 
             // label3
             // 
@@ -309,6 +310,7 @@
             this.PrenomTXT.Name = "PrenomTXT";
             this.PrenomTXT.Size = new System.Drawing.Size(323, 32);
             this.PrenomTXT.TabIndex = 3;
+            this.PrenomTXT.TextChanged += new System.EventHandler(this.NomTXT_TextChanged);
             // 
             // label4
             // 
@@ -346,6 +348,7 @@
             this.CinTXT.Name = "CinTXT";
             this.CinTXT.Size = new System.Drawing.Size(323, 32);
             this.CinTXT.TabIndex = 4;
+            this.CinTXT.TextChanged += new System.EventHandler(this.NomTXT_TextChanged);
             // 
             // label5
             // 
@@ -383,6 +386,7 @@
             this.CnssTXT.Name = "CnssTXT";
             this.CnssTXT.Size = new System.Drawing.Size(323, 32);
             this.CnssTXT.TabIndex = 5;
+            this.CnssTXT.TextChanged += new System.EventHandler(this.NomTXT_TextChanged);
             // 
             // label6
             // 
@@ -420,6 +424,7 @@
             this.TelTXT.Name = "TelTXT";
             this.TelTXT.Size = new System.Drawing.Size(323, 32);
             this.TelTXT.TabIndex = 6;
+            this.TelTXT.TextChanged += new System.EventHandler(this.NomTXT_TextChanged);
             // 
             // label7
             // 
@@ -457,6 +462,7 @@
             this.RIBTXT.Name = "RIBTXT";
             this.RIBTXT.Size = new System.Drawing.Size(323, 32);
             this.RIBTXT.TabIndex = 7;
+            this.RIBTXT.TextChanged += new System.EventHandler(this.NomTXT_TextChanged);
             // 
             // label8
             // 
@@ -533,6 +539,7 @@
             this.VilleTXT.Name = "VilleTXT";
             this.VilleTXT.Size = new System.Drawing.Size(323, 32);
             this.VilleTXT.TabIndex = 7;
+            this.VilleTXT.TextChanged += new System.EventHandler(this.NomTXT_TextChanged);
             // 
             // label10
             // 
@@ -571,6 +578,7 @@
             this.SteTXT.Name = "SteTXT";
             this.SteTXT.Size = new System.Drawing.Size(323, 95);
             this.SteTXT.TabIndex = 18;
+            this.SteTXT.TextChanged += new System.EventHandler(this.NomTXT_TextChanged);
             // 
             // label11
             // 
@@ -609,6 +617,7 @@
             this.AdresseTXT.Name = "AdresseTXT";
             this.AdresseTXT.Size = new System.Drawing.Size(323, 95);
             this.AdresseTXT.TabIndex = 18;
+            this.AdresseTXT.TextChanged += new System.EventHandler(this.NomTXT_TextChanged);
             // 
             // label12
             // 
@@ -647,6 +656,7 @@
             this.ObsertionTXT.Name = "ObsertionTXT";
             this.ObsertionTXT.Size = new System.Drawing.Size(793, 77);
             this.ObsertionTXT.TabIndex = 10;
+            this.ObsertionTXT.TextChanged += new System.EventHandler(this.NomTXT_TextChanged);
             // 
             // label13
             // 
@@ -701,6 +711,7 @@
             this.myButton2.Size = new System.Drawing.Size(56, 36);
             this.myButton2.TabIndex = 12;
             this.myButton2.Text = "Vider";
+            this.myButton2.Click += new System.EventHandler(this.myButton2_Click);
             // 
             // EnregistrerBtn
             // 
